@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Schema;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -22,9 +24,13 @@ public class GameController : MonoBehaviour
     [SerializeField] TextMeshProUGUI txtEndName;
     [SerializeField] TextMeshProUGUI txtEndScore;
 
+    [SerializeField] TMP_InputField txtMembership;
+    [SerializeField] TextMeshProUGUI txtMem;
+
     Animator animator;
     int score;
     int level;
+    int chuoi;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -33,6 +39,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         level = 0;
+        chuoi = 0;
     }
 
     
@@ -46,6 +53,10 @@ public class GameController : MonoBehaviour
         {
             animator.SetTrigger("ClickRight");
         }
+        txtMem.gameObject.SetActive(true);
+        txtMem.text = "Membership: " + txtMembership.text;
+
+        txtMembership.gameObject.SetActive(false);
     }
     bool isLeft = false;
     public void ShowLeft(int i) {
@@ -78,6 +89,13 @@ public class GameController : MonoBehaviour
         }
 
         StartCoroutine(UpdateScore(values[i]));
+        if (values[i] > 0)
+        {
+            chuoi++;
+        }
+        else
+            chuoi--;
+        print(chuoi);
     }
     Sprite Convert(int value)
     {
@@ -95,13 +113,19 @@ public class GameController : MonoBehaviour
                 return isLeft ? spritesLeft[3] : spritesRight[4];
             case 50:
                 return spritesLeft[4];
+            default:
+                return isLeft ? spritesLeft[5 + value/100] : spritesRight[5 + value/100];
         }
-        return null;
     }
     IEnumerator UpdateScore(int value)
     {
         int d = value > 0 ? (score + value) : 0;
         int delta = d > 0 ? 1 : -1;
+        if (value%100 == 0)
+        {
+            d = score * (value / 100);
+            delta = 1;
+        }
         while(score != d)
         {
             score += delta;
@@ -118,19 +142,19 @@ public class GameController : MonoBehaviour
     }
     public void GO()
     {
-        if(level < 3)
+        animator.SetTrigger(isLeft ? "InitLeft" : "InitRight");
+        GameObject go = isLeft ? goLeft : goRight;
+        for (int j = 0; j < go.transform.childCount; j++)
+        {
+            go.transform.GetChild(j).GetChild(0).GetComponent<Button>().interactable = true;
+
+            go.transform.GetChild(j).GetChild(0).GetChild(0).GetComponent<Image>().sprite = isLeft ? spritesLeft[5] : spritesRight[5];
+        }
+        if (level < 4)
         {
             level++;
-            animator.SetTrigger(isLeft ? "InitLeft" : "InitRight");
-            GameObject go = isLeft ? goLeft : goRight;
-            for (int j = 0; j < go.transform.childCount; j++)
-            {
-                go.transform.GetChild(j).GetChild(0).GetComponent<Button>().interactable = true;
-
-                go.transform.GetChild(j).GetChild(0).GetChild(0).GetComponent<Image>().sprite = isLeft ? spritesLeft[5] : spritesRight[5];
-            }
         }
-        else
+        else if(chuoi != 4 || level > 4)
         {
             EndGame();
         }
@@ -143,18 +167,36 @@ public class GameController : MonoBehaviour
     {
         int[] A = { -1, -2 };
         int[,] B = { { 5, 10, 20 }, { 10, 20, 50 } };
-        int[,] type = { { -1, 1, 1, 1, 1},
+        int[,] type = { { -1, -1, 1, 1, 1},
                         {-1, -1, 1, 1, 1},
-                        {-1, -1, -1, 1, 1},
-                        {-1, -1, -1, -1, 1} };
-        if (level >= 4)
-            return null;
+                        {-1, -1, 1, 1, 1},
+                        {-1, -1, 1, 1, 1} };
+        if (level == 4)
+        {
+            int[] C = { 100, 200, 300, 400, 500 };
+            return C;
+        }
         int[] result = new int[5];
         for(int i=0; i<5; i++)
         {
             if (type[level, i] == 1)
             {
-                result[i] = B[isLeft ? 1 : 0, Random.Range(0, 3)];
+                while (true)
+                {
+                    int x = B[isLeft ? 1 : 0, Random.Range(0, 3)];
+                    bool check = false;
+                    for(int j=0; j<i; j++)
+                        if (result[j] == x)
+                        {
+                            check = true;
+                            break;
+                        }
+                    if (!check)
+                    {
+                        result[i] = x;
+                        break;
+                    }
+                }
             }
             else
             {
