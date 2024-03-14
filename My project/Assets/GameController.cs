@@ -132,7 +132,8 @@ public class GameController : MonoBehaviour
             txtScore.text = "$" + score.ToString();
             yield return new WaitForSeconds(0.02f);
         }
-
+        if (score == 0)
+            LoadScene();
         StartCoroutine(End());
     }
     IEnumerator End()
@@ -171,12 +172,32 @@ public class GameController : MonoBehaviour
                         {-1, -1, 1, 1, 1},
                         {-1, -1, 1, 1, 1},
                         {-1, -1, 1, 1, 1} };
+        int[] result = new int[5];
         if (level == 4)
         {
             int[] C = { 100, 200, 300, 400, 500 };
-            return C;
+            for (int i = 0; i < 5; i++)
+            {
+                while (true)
+                {
+                    int x = C[Random.Range(0, 5)];
+                    bool check = false;
+                    for (int j = 0; j < i; j++)
+                        if (result[j] == x)
+                        {
+                            check = true;
+                            break;
+                        }
+                    if (!check)
+                    {
+                        result[i] = x;
+                        break;
+                    }
+                }
+            }
+            return result;
         }
-        int[] result = new int[5];
+        
         for(int i=0; i<5; i++)
         {
             if (type[level, i] == 1)
