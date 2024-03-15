@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
     [SerializeField] Image imgEnd;
     [SerializeField] TextMeshProUGUI txtEndName;
     [SerializeField] TextMeshProUGUI txtEndScore;
+    [SerializeField]
+    Sprite[] imgTxtEnd;
 
     [SerializeField] TMP_InputField txtMembership;
     [SerializeField] TextMeshProUGUI txtMem;
@@ -31,6 +33,7 @@ public class GameController : MonoBehaviour
     int score;
     int level;
     int chuoi;
+    int typeTxt;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -40,6 +43,7 @@ public class GameController : MonoBehaviour
     {
         level = 0;
         chuoi = 0;
+        typeTxt = 0;
     }
 
     
@@ -102,8 +106,10 @@ public class GameController : MonoBehaviour
         switch (value)
         {
             case -2:
+                typeTxt = 1;
                 return isLeft ? spritesLeft[0] : spritesRight[0];
             case -1:
+                typeTxt = 2;
                 return isLeft ? spritesLeft[1] : spritesRight[1];
             case 5:
                 return spritesRight[2];
@@ -133,7 +139,9 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
         }
         if (score == 0)
-            LoadScene();
+        {
+            EndGame(typeTxt);
+        }else
         StartCoroutine(End());
     }
     IEnumerator End()
@@ -242,7 +250,7 @@ public class GameController : MonoBehaviour
         return r;
     }
 
-    void EndGame()
+    void EndGame(int type = 0)
     {
         imgEnd.sprite = imgEnds[isLeft ? 0 : 1];
         if(score > 0)
@@ -253,7 +261,9 @@ public class GameController : MonoBehaviour
         {
             txtEndName.text = "YOU LOSE";
         }
-        txtEndScore.text = "$" + score.ToString();
+        string[] value = { "$" + score.ToString(), "OOPS !!!", "OMG !!!" };
+        txtEndScore.text = value[type];
+        
         animator.SetTrigger("EndGame");
         level = 0;
     }

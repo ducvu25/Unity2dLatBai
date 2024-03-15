@@ -1699,8 +1699,8 @@ MonoBehaviour:
   - {fileID: 1386765361795963822, guid: b56466bdfb6e319499cc3f0d19ac106a, type: 3}
   goRight: {fileID: 2062659853}
   spritesRight:
-  - {fileID: 964100512713519453, guid: ea2ec03009739164b999b8c3a4e03483, type: 3}
   - {fileID: -6106636587403066470, guid: 3cff7a40e5a4d1c4995453f9990fedcd, type: 3}
+  - {fileID: 964100512713519453, guid: ea2ec03009739164b999b8c3a4e03483, type: 3}
   - {fileID: -1099860077194051376, guid: abfe03b7499a5714f8adcadc898b41e9, type: 3}
   - {fileID: 7212795178595908985, guid: 163d34fe964fb474287be431b3f8b83d, type: 3}
   - {fileID: 2698166772826545171, guid: 065b9b9f7a808334c86a052cc11b33a6, type: 3}
@@ -1717,6 +1717,9 @@ MonoBehaviour:
   imgEnd: {fileID: 1980915469}
   txtEndName: {fileID: 1746859297}
   txtEndScore: {fileID: 1646664098}
+  imgTxtEnd:
+  - {fileID: 21300000, guid: 88a6753486b286842afc94e9218e3ba6, type: 3}
+  - {fileID: 21300000, guid: 5ae02e5c618cad3458b4b71065ec5dc9, type: 3}
   txtMembership: {fileID: 477471914}
   txtMem: {fileID: 1893654976}
 --- !u!1 &967430215
@@ -2982,7 +2985,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 150
-  m_fontStyle: 19
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3313,13 +3316,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.5
+  m_fontSize: 29.7
   m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 150
-  m_fontStyle: 19
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
