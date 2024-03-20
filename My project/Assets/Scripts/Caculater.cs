@@ -6,13 +6,13 @@ public static class Caculater
 {
     public static int[,] scoreValue = { { 0, 5, 10, 20, 30, 50, 100},
                                         { 0, 10, 20, 30, 50, 100, 200}}; 
-    public static int[] InitValue(int level)
+    public static int[] InitValue(int level, bool isLeft = true)
     {
         int[] result = new int[5];
         if (level == 4)
         {
-            int[] C = { -1, -2, -3, -4, -5 };
-            for (int i = 0; i < 5; i++)
+            int[] C = { -1, -1, -2, -2, -3 };
+            /*for (int i = 0; i < 5; i++)
             {
                 while (true)
                 {
@@ -30,8 +30,8 @@ public static class Caculater
                         break;
                     }
                 }
-            }
-            return result;
+            }*/
+            return ShuffleArray(C);
         }
         int[,] type = { { 0, 1, 1, 2, 2},
                         {0, 2, 2, 3, 3},
@@ -54,6 +54,25 @@ public static class Caculater
                 if (!check.Contains(k))
                 {
                     result[i] = array[level, k];
+                    check.Add(k);
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+    static int[] ShuffleArray(int[] array)
+    {
+        List<int> check = new List<int>();
+        int[] result = { 0, 0, 0, 0, 0 };
+        for (int i = 0; i < 5; i++)
+        {
+            while (true)
+            {
+                int k = (int)Random.Range(0, 5);
+                if (!check.Contains(k))
+                {
+                    result[i] = array[k];
                     check.Add(k);
                     break;
                 }
