@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -35,6 +33,9 @@ public class GameController : MonoBehaviour
     [SerializeField] TMP_InputField txtMembership;
     [SerializeField] TextMeshProUGUI txtMem;
 
+    [SerializeField] GameObject goEffect;
+    [SerializeField] Vector2 p1, p2;
+
     Animator animator;
     int score;
     int level;
@@ -51,7 +52,7 @@ public class GameController : MonoBehaviour
         level = 0;
         chuoi = 0;
         typeTxt = 0;
-        Time.timeScale = 0.4f;
+        Time.timeScale =  0.4f;
     }
 
     
@@ -161,7 +162,7 @@ public class GameController : MonoBehaviour
         if (value < 0)
         {
             d = score * (-value);
-            delta = 3;
+            delta = -value*5;
         }
         else if (value > 0)
         {
@@ -191,7 +192,12 @@ public class GameController : MonoBehaviour
     IEnumerator End()
     {
         yield return new WaitForSeconds(1);
-        animator.SetTrigger("End");
+        if(isLeft)
+            animator.SetTrigger("EndLeft");
+        else
+        {
+            animator.SetTrigger("EndRight");
+        }
         if (isLeft) goLeft.SetActive(true);
         else goRight.SetActive(true);
         
@@ -231,6 +237,8 @@ public class GameController : MonoBehaviour
         {
             txtEndName.text = "YOU WON";
             StartCoroutine(StartSound((int)TypeEffecySound.WIN));
+            StartCoroutine(Spawn());
+            Invoke("EndSpawn", 20);
         }
         else
         {
@@ -241,6 +249,7 @@ public class GameController : MonoBehaviour
         txtEndScore.text = value[type];
         
         animator.SetTrigger("EndGame");
+        //Invoke("LoadScene", 40);
         level = 0;
     }
     IEnumerator StartSound(int index, float delay = 0.2f)
@@ -251,5 +260,22 @@ public class GameController : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene(0);
+    }
+    void EndSpawn()
+    {
+        StopCoroutine(Spawn());
+    }
+    IEnumerator Spawn()
+    {
+        while (true)
+        {
+            int n = Random.RandomRange(0, 3);
+            for (int i = 0; i < n; i++)
+            {
+                GameObject go = Instantiate(goEffect, new Vector2(Random.Range(p1.x, p2.x), Random.Range(p1.y, p2.y)), Quaternion.identity);
+                Destroy(go, 2);
+            }
+            yield return new WaitForSeconds(Random.RandomRange(0.4f, 1.5f));
+        }
     }
 }

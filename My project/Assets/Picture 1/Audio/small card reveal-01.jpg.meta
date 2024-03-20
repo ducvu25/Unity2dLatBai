@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      small card reveal-01_0: -2972440831685325145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

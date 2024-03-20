@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      big card reveal-02_0: -2911522979455778821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
