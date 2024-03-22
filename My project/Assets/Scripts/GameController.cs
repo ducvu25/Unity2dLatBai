@@ -162,7 +162,7 @@ public class GameController : MonoBehaviour
         if (value < 0)
         {
             d = score * (-value);
-            delta = -value*5;
+            delta = -value * 5;
         }
         else if (value > 0)
         {
@@ -173,15 +173,16 @@ public class GameController : MonoBehaviour
             d = 0;
             delta = -1;
         }
-        if(d != 0)
+        if (d != 0)
             StartCoroutine(StartSound((int)TypeEffecySound.ADD_COIN, 0));
-        while (score != d)
+        while ((score < d && delta > 0) || (score > d && delta < 0))
         {
             score += delta;
+            if (score > d)
+                score = d;
             txtScore.text = "$" + score.ToString();
             yield return new WaitForSeconds(0.02f);
         }
-
         if (score == 0)
         {
             StartCoroutine(EndGame(0, 0.5f));
@@ -237,8 +238,8 @@ public class GameController : MonoBehaviour
         {
             txtEndName.text = "YOU WON";
             StartCoroutine(StartSound((int)TypeEffecySound.WIN));
-            StartCoroutine(Spawn());
-            Invoke("EndSpawn", 20);
+            //StartCoroutine(Spawn());
+            //Invoke("EndSpawn", 20);
         }
         else
         {
@@ -261,13 +262,13 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-    void EndSpawn()
+    /*void EndSpawn()
     {
         StopCoroutine(Spawn());
-    }
-    IEnumerator Spawn()
+    }*/
+    /*IEnumerator Spawn()
     {
-        while (true)
+        *//*while (true)
         {
             int n = Random.RandomRange(0, 3);
             for (int i = 0; i < n; i++)
@@ -276,6 +277,6 @@ public class GameController : MonoBehaviour
                 Destroy(go, 2);
             }
             yield return new WaitForSeconds(Random.RandomRange(0.4f, 1.5f));
-        }
-    }
+        }*//*
+    }*/
 }
