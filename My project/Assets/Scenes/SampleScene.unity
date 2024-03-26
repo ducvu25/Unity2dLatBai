@@ -190,7 +190,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -385,7 +389,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1104,6 +1112,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1273,7 +1289,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1440,6 +1460,14 @@ PrefabInstance:
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Pivot.x
@@ -1697,37 +1725,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goLeft: {fileID: 1372430869}
-  spriteLeft: {fileID: -1626525477919547998, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+  spriteLeft: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
   spritesLeft:
-  - {fileID: -6106636587403066470, guid: 5e4753c45a24c964f8d8c92d8e4d7cd6, type: 3}
-  - {fileID: 7212795178595908985, guid: 05ebecbb1681b7845b45e839d0549475, type: 3}
-  - {fileID: 2698166772826545171, guid: 90329297968e4bd4f99a849b06ebf211, type: 3}
-  - {fileID: -2773519218890514806, guid: f8188b2245b6fc14fabd4ff4878cf620, type: 3}
-  - {fileID: 3950346158993011855, guid: dd6f3f66febfca5479f51c1119cf0ace, type: 3}
-  - {fileID: -1873497421647795318, guid: 79ea021b660f6544eb56388486f9e564, type: 3}
-  - {fileID: -9075700790380782307, guid: fd0e45c4d9d0bbf4db6f3b961d9ff5f1, type: 3}
+  - {fileID: 21300000, guid: 5e4753c45a24c964f8d8c92d8e4d7cd6, type: 3}
+  - {fileID: 21300000, guid: 05ebecbb1681b7845b45e839d0549475, type: 3}
+  - {fileID: 21300000, guid: 90329297968e4bd4f99a849b06ebf211, type: 3}
+  - {fileID: 21300000, guid: f8188b2245b6fc14fabd4ff4878cf620, type: 3}
+  - {fileID: 21300000, guid: dd6f3f66febfca5479f51c1119cf0ace, type: 3}
+  - {fileID: 21300000, guid: 79ea021b660f6544eb56388486f9e564, type: 3}
+  - {fileID: 21300000, guid: fd0e45c4d9d0bbf4db6f3b961d9ff5f1, type: 3}
   spritesXLeft:
-  - {fileID: 7252362929305011424, guid: e150bd2e24ca01e4e8ae559929095a20, type: 3}
-  - {fileID: -8366067564511975507, guid: 6ae5d2643e0c45f4a9dd798c4e2f0edb, type: 3}
-  - {fileID: 7427789201436307754, guid: ca990daf70f5e2740aa884d65f5be6d2, type: 3}
-  - {fileID: 8321528207803008786, guid: a2bc83977e3ae9b4abac4b1e09f60f9c, type: 3}
-  - {fileID: 1386765361795963822, guid: b56466bdfb6e319499cc3f0d19ac106a, type: 3}
+  - {fileID: 21300000, guid: e150bd2e24ca01e4e8ae559929095a20, type: 3}
+  - {fileID: 21300000, guid: 6ae5d2643e0c45f4a9dd798c4e2f0edb, type: 3}
+  - {fileID: 21300000, guid: ca990daf70f5e2740aa884d65f5be6d2, type: 3}
+  - {fileID: 21300000, guid: a2bc83977e3ae9b4abac4b1e09f60f9c, type: 3}
+  - {fileID: 21300000, guid: b56466bdfb6e319499cc3f0d19ac106a, type: 3}
   goRight: {fileID: 2062659853}
-  spriteRight: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+  spriteRight: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
   spritesRight:
-  - {fileID: -6106636587403066470, guid: 3cff7a40e5a4d1c4995453f9990fedcd, type: 3}
-  - {fileID: -1099860077194051376, guid: abfe03b7499a5714f8adcadc898b41e9, type: 3}
-  - {fileID: 7212795178595908985, guid: 163d34fe964fb474287be431b3f8b83d, type: 3}
-  - {fileID: -167513463239859346, guid: 0ea02e4762bfe924f9ee68fc53e82129, type: 3}
-  - {fileID: -6347747089180468584, guid: ab273e22bada7e949884db51427887c0, type: 3}
-  - {fileID: 1564834183769493293, guid: e824bbbaa93a6434ea2b83e8854d01e4, type: 3}
-  - {fileID: 6421233286028372717, guid: 6622f10dedd87b744b9a239f9b5a4c1f, type: 3}
+  - {fileID: 21300000, guid: 3cff7a40e5a4d1c4995453f9990fedcd, type: 3}
+  - {fileID: 21300000, guid: abfe03b7499a5714f8adcadc898b41e9, type: 3}
+  - {fileID: 21300000, guid: 163d34fe964fb474287be431b3f8b83d, type: 3}
+  - {fileID: 21300000, guid: 0ea02e4762bfe924f9ee68fc53e82129, type: 3}
+  - {fileID: 21300000, guid: ab273e22bada7e949884db51427887c0, type: 3}
+  - {fileID: 21300000, guid: e824bbbaa93a6434ea2b83e8854d01e4, type: 3}
+  - {fileID: 21300000, guid: 6622f10dedd87b744b9a239f9b5a4c1f, type: 3}
   spritesXRight:
-  - {fileID: 473480548913919322, guid: 773f9d3f5a7c82b47950a9b521d897dc, type: 3}
-  - {fileID: -6215589218591634570, guid: cc5213c80fdf76647ae44249b3e3dcfc, type: 3}
-  - {fileID: 5289144587062512289, guid: dc02e17b97ca5624b80ccc8998acadaf, type: 3}
-  - {fileID: -8061062178638732884, guid: 4aeae9bba5e09c14e8152d4fc62b49bb, type: 3}
-  - {fileID: -1800035887920293941, guid: 8606876013d7115428b4d98b2656d997, type: 3}
+  - {fileID: 21300000, guid: 773f9d3f5a7c82b47950a9b521d897dc, type: 3}
+  - {fileID: 21300000, guid: cc5213c80fdf76647ae44249b3e3dcfc, type: 3}
+  - {fileID: 21300000, guid: dc02e17b97ca5624b80ccc8998acadaf, type: 3}
+  - {fileID: 21300000, guid: 4aeae9bba5e09c14e8152d4fc62b49bb, type: 3}
+  - {fileID: 21300000, guid: 8606876013d7115428b4d98b2656d997, type: 3}
   txtScore: {fileID: 1045711043}
   imgEnds:
   - {fileID: 54888002291660355, guid: b603a3e1bd9646541be888670aebaa7f, type: 3}
@@ -1886,6 +1914,14 @@ PrefabInstance:
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Pivot.x
@@ -2692,6 +2728,14 @@ PrefabInstance:
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Pivot.x
@@ -3625,7 +3669,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4154,7 +4202,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4397,6 +4449,14 @@ PrefabInstance:
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Pivot.x
@@ -4696,7 +4756,11 @@ PrefabInstance:
     - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7052891416352155660, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4816,6 +4880,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0969ad788e18e7849b4bb641abd79ec4, type: 3}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}

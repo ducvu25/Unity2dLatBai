@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
         level = 0;
         chuoi = 0;
         typeTxt = 0;
-        Time.timeScale =  0.4f;
+        Time.timeScale =  2f; // tốc độ
     }
 
     
@@ -183,12 +183,13 @@ public class GameController : MonoBehaviour
             txtScore.text = "$" + score.ToString();
             yield return new WaitForSeconds(0.02f);
         }
-        if (score == 0)
+        if (score == 0 || level == 4)
         {
             StartCoroutine(EndGame(0, 0.5f));
         }
         else
             StartCoroutine(End());
+
     }
     IEnumerator End()
     {
@@ -243,7 +244,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            txtEndName.text = "YOU LOSE";
+            txtEndName.text = "GAME OVER";
             StartCoroutine(StartSound((int)TypeEffecySound.LOSE));
         }
         string[] value = { "$" + score.ToString(), "OOPS !!!"};
