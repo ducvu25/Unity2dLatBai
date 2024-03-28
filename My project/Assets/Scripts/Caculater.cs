@@ -12,25 +12,6 @@ public static class Caculater
         if (level == 4)
         {
             int[] C = { -1, -1, -2, -2, -3 };
-            /*for (int i = 0; i < 5; i++)
-            {
-                while (true)
-                {
-                    int x = C[Random.Range(0, 5)];
-                    bool check = false;
-                    for (int j = 0; j < i; j++)
-                        if (result[j] == x)
-                        {
-                            check = true;
-                            break;
-                        }
-                    if (!check)
-                    {
-                        result[i] = x;
-                        break;
-                    }
-                }
-            }*/
             return ShuffleArray(C);
         }
         int[,] type = { { 0, 1, 1, 2, 2},

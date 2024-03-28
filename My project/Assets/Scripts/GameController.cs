@@ -130,10 +130,18 @@ public class GameController : MonoBehaviour
                     break;
                 }
             case 4:
+                {
+                    StartCoroutine(StartSound((int)(isLeft ? TypeEffecySound.l50 : TypeEffecySound.GREEN_BIG_CARD), 0));
+                    break;
+                }
             case 5:
+                {
+                    StartCoroutine(StartSound((int)(isLeft ? TypeEffecySound.l100 : TypeEffecySound.r50), 0));
+                    break;
+                }
             case 6:
                 {
-                    StartCoroutine(StartSound((int)(isLeft ? TypeEffecySound.RED_BIG_CARD : TypeEffecySound.GREEN_BIG_CARD), 0));
+                    StartCoroutine(StartSound((int)(isLeft ? TypeEffecySound.l200 : TypeEffecySound.r100), 0));
                     break;
                 }
             case 0:

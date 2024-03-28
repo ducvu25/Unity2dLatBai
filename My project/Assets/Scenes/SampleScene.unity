@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4415890722147422332, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617297587960001959, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -287,6 +291,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9189914571907320655, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -366,6 +378,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4415890722147422332, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617297587960001959, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -486,6 +502,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9189914571907320655, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -1108,9 +1132,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4826470777076382535, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Sprite
@@ -1266,6 +1302,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4415890722147422332, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617297587960001959, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -1386,6 +1426,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9189914571907320655, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -1457,9 +1505,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4826470777076382535, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Sprite
@@ -1743,9 +1803,9 @@ MonoBehaviour:
   goRight: {fileID: 2062659853}
   spriteRight: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
   spritesRight:
-  - {fileID: 21300000, guid: 3cff7a40e5a4d1c4995453f9990fedcd, type: 3}
+  - {fileID: -6106636587403066470, guid: 3cff7a40e5a4d1c4995453f9990fedcd, type: 3}
   - {fileID: 21300000, guid: abfe03b7499a5714f8adcadc898b41e9, type: 3}
-  - {fileID: 21300000, guid: 163d34fe964fb474287be431b3f8b83d, type: 3}
+  - {fileID: 7212795178595908985, guid: 163d34fe964fb474287be431b3f8b83d, type: 3}
   - {fileID: 21300000, guid: 0ea02e4762bfe924f9ee68fc53e82129, type: 3}
   - {fileID: 21300000, guid: ab273e22bada7e949884db51427887c0, type: 3}
   - {fileID: 21300000, guid: e824bbbaa93a6434ea2b83e8854d01e4, type: 3}
@@ -1907,6 +1967,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4826470777076382535, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5866016246946003422, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1914,6 +1978,14 @@ PrefabInstance:
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Sprite
@@ -2725,9 +2797,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4826470777076382535, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Sprite
@@ -2874,8 +2958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -32}
-  m_SizeDelta: {x: 339.9447, y: 144.2268}
+  m_AnchoredPosition: {x: -9.23, y: -18.15}
+  m_SizeDelta: {x: 386.12, y: 167.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646664098
 MonoBehaviour:
@@ -2924,7 +3008,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 129.05
+  m_fontSize: 149.75
   m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3074,12 +3158,12 @@ RectTransform:
   m_LocalScale: {x: 1.1999999, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1765538524}
+  m_Father: {fileID: 1980915468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 80}
-  m_SizeDelta: {x: 297.45, y: 42.9273}
+  m_AnchoredPosition: {x: -14.03, y: 183.99}
+  m_SizeDelta: {x: 393.6, y: 74.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746859297
 MonoBehaviour:
@@ -3110,9 +3194,9 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278251775
-  m_fontColor: {r: 1, g: 0.94291973, b: 0, a: 1}
-  m_enableVertexGradient: 1
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
   m_colorMode: 2
   m_fontColorGradient:
     topLeft: {r: 1, g: 0.69059104, b: 0.4669811, a: 1}
@@ -3128,7 +3212,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.25
+  m_fontSize: 48.25
   m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3344,7 +3428,6 @@ RectTransform:
   m_Children:
   - {fileID: 1980915468}
   - {fileID: 1646664097}
-  - {fileID: 1746859296}
   m_Father: {fileID: 514345363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3650,6 +3733,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4415890722147422332, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617297587960001959, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -3766,6 +3853,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9189914571907320655, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -3919,81 +4014,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922028083}
-  m_CullTransparentMesh: 1
---- !u!1 &1934304756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1934304757}
-  - component: {fileID: 1934304759}
-  - component: {fileID: 1934304758}
-  m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1934304757
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934304756}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1980915468}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.2383, y: 182.1653}
-  m_SizeDelta: {x: 438.99, y: 49.4761}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1934304758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934304756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 6228618926152490498, guid: a1619885c24447d4cba99306b5a1fb94, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1934304759
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934304756}
   m_CullTransparentMesh: 1
 --- !u!1 &1945393653
 GameObject:
@@ -4179,6 +4199,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4415890722147422332, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617297587960001959, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -4299,6 +4323,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -999586855508397862, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 7554859418482373706, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9189914571907320655, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_AnimationTriggers.m_PressedTrigger
       value: Pressed
@@ -4360,7 +4392,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1934304757}
+  - {fileID: 1746859296}
   m_Father: {fileID: 1765538524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4446,9 +4478,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4826470777076382535, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7690873787301029582, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Name
       value: Card (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 656103b3eefa1fa44946a0a702ecd832, type: 3}
+    - target: {fileID: 8186951156894434052, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8837324570645578710, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_Sprite
@@ -4997,7 +5041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1069703010735598103, guid: afc2a4d9c1ba54345865470ac2416886, type: 3}
       propertyPath: m_Volume
-      value: 0.471
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 2853081590120137053, guid: afc2a4d9c1ba54345865470ac2416886, type: 3}
       propertyPath: m_Name

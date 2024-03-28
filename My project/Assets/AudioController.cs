@@ -15,7 +15,12 @@ public enum TypeEffecySound
     ADD_COIN,
     BUTTON,
     WIN,
-    LOSE
+    LOSE,
+    l50,
+    l100,
+    l200,
+    r50,
+    r100,
 }
 public class AudioController : MonoBehaviour
 {
@@ -34,6 +39,8 @@ public class AudioController : MonoBehaviour
     }
     public void Play(int i, float volume = 1)
     {
+        if (i >= (int)TypeEffecySound.l50 || i == (int)TypeEffecySound.WIN)
+            volume = 1.2f;
         Play(audios[i], ref sources[i], volume);
     }
 
