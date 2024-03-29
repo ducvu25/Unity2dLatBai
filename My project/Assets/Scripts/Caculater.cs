@@ -14,7 +14,7 @@ public static class Caculater
             int[] C = { -1, -1, -2, -2, -3 };
             return ShuffleArray(C);
         }
-        int[,] type = { { 0, 1, 1, 2, 2},
+        int[,] type = { { 0, 1, 1, 2, 3},
                         {0, 2, 2, 3, 3},
                         {0, 0, 3, 3, 4},
                         {0, 0, 4, 5, 6}};

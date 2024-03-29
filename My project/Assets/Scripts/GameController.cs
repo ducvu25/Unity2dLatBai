@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
         level = 0;
         chuoi = 0;
         typeTxt = 0;
-        Time.timeScale =  2f; // tốc độ
+        Time.timeScale =  0.4f; // tốc độ
     }
 
     
@@ -256,7 +256,10 @@ public class GameController : MonoBehaviour
             StartCoroutine(StartSound((int)TypeEffecySound.LOSE));
         }
         string[] value = { "$" + score.ToString(), "OOPS !!!"};
-        txtEndScore.text = value[type];
+        string s = value[type];
+        if (score == 0)
+            s = value[1];
+        txtEndScore.text = s;
         
         animator.SetTrigger("EndGame");
         //Invoke("LoadScene", 40);
