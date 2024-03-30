@@ -85,7 +85,7 @@ public class GameController : MonoBehaviour
     {
         isLeft = left;
         GameObject go = left ? goLeft : goRight;
-        int[] values = Caculater.InitValue(level);
+        int[] values = Caculater.InitValue(level, isLeft);
         for (int j = 0; j < go.transform.childCount; j++)
         {
             go.transform.GetChild(j).GetChild(0).GetComponent<Button>().interactable = false;
