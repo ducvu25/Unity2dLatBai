@@ -2504,7 +2504,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4838,6 +4838,14 @@ PrefabInstance:
       value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070050217890168393, guid: dadb4ac27ef85a84db17d49668d5b466, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -4973,6 +4981,14 @@ PrefabInstance:
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_SizeDelta.y
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097058941776481106, guid: 8f179c2b856b36e4faee35dd972e3272, type: 3}
       propertyPath: m_LocalPosition.x

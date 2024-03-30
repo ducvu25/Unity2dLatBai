@@ -98,7 +98,7 @@ public class GameController : MonoBehaviour
                 go.transform.GetChild(j).GetChild(0).GetChild(0).GetComponent<Image>().sprite = left ? spritesLeft[values[j]] : spritesRight[values[j]];
             }
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         for (int j = 0; j < go.transform.childCount; j++)
         {
             go.transform.GetChild(j).GetChild(0).GetComponent<Button>().interactable = false;

@@ -14,16 +14,21 @@ public static class Caculater
             int[] C = { -1, -1, -2, -2, -3 };
             return ShuffleArray(C);
         }
-        int[,] type = { { 0, 1, 1, 2, 3},
+        int[,,] type = {{{ 0, 1, 1, 2, 3},
                         {0, 2, 2, 3, 3},
                         {0, 0, 3, 3, 4},
-                        {0, 0, 4, 5, 6}};
+                        {0, 0, 4, 5, 6} },
+                        {{ 0, 1, 1, 2, 2},
+                        {0, 2, 2, 3, 3},
+                        {0, 0, 3, 3, 4},
+                        {0, 0, 4, 5, 6} },
+                        };
+        
 
-
-        return ShuffleArray(type, level);
+        return ShuffleArray(type, isLeft ? 1 : 0, level);
     }
 
-    static int[] ShuffleArray(int[,] array, int level)
+    static int[] ShuffleArray(int[,,] array, int type, int level)
     {
         List<int> check = new List<int>();
         int[] result = { 0, 0, 0, 0, 0 };
@@ -34,7 +39,7 @@ public static class Caculater
                 int k = (int)Random.Range(0, 5);
                 if (!check.Contains(k))
                 {
-                    result[i] = array[level, k];
+                    result[i] = array[type, level, k];
                     check.Add(k);
                     break;
                 }
